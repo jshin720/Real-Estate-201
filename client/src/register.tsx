@@ -17,7 +17,7 @@ function Register() {
     <Container fluid="md">
       <Row>
         <Col>
-          <Form className="">
+          <Form className="p-3">
             <FormGroup className="mb-3">
               <FormLabel>Username</FormLabel>
               <FormControl type="text" placeholder='Username' />
