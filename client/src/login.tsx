@@ -17,6 +17,11 @@ function Login() {
     <Container fluid="md">
       <Row>
         <Col>
+          <h1>Welcome Back</h1>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
           <Form className="p-3">
             <FormGroup className="mb-3">
               <FormLabel>Email Address</FormLabel>

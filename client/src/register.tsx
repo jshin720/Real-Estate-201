@@ -17,6 +17,11 @@ function Register() {
     <Container fluid="md">
       <Row>
         <Col>
+          <h1>Create Account</h1>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
           <Form className="p-3">
             <FormGroup className="mb-3">
               <FormLabel>Username</FormLabel>
