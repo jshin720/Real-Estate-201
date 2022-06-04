@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 
 function Login() {
   return (
-    <Container fluid="md">
+    <Container fluid>
       <Row>
         <Col>
           <h1>Welcome Back</h1>

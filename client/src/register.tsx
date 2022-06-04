@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 
 function Register() {
   return (
-    <Container fluid="md">
+    <Container fluid>
       <Row>
         <Col>
           <h1>Create Account</h1>

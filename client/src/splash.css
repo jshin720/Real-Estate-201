@@ -1,4 +1,4 @@
 #bg-cover {
-  height: 100vh;
-  background: linear-gradient(45deg, #CCFFFF, #FFCCCC);
+  height: 100%;
+  background: linear-gradient(to bottom, #99ffcc 0%, #00ff99 100%);
 }
