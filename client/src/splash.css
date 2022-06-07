@@ -1,4 +1,6 @@
 #bg-cover {
   height: 100%;
-  background: linear-gradient(to bottom, #99ffcc 0%, #00ff99 100%);
+  background: url('https://www.greenfieldreporter.com/wp-content/uploads/2022/05/128712687_web1_WEB-ICON-Real-Estate-transactions.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
