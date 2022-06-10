@@ -1,11 +1,12 @@
-const express = require("express");
+import mongoose from "mongoose";
+import express from "express";
 const app = express();
 const db = require('./../config/keys.js').mongoURI;
-const mongoose = require('mongoose');
+
 
 
 mongoose
-  .connect(db, { useNewUrlParser: true })
+  .connect(db)
   .then(() => console.log("Connected to MongoDB successfully"))
   .catch((err: any) => console.log(err));
 
