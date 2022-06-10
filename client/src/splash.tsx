@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Form, FormControl, Button } from "react-bootstrap";
+import { Search } from "react-bootstrap-icons";
 import './splash.css'
 
 const Splash = () => {
@@ -15,7 +16,7 @@ const Splash = () => {
                     className="me-2"
                     aria-label="Search"
                 />
-                <Button variant="outline-success"></Button>
+                <Button variant="primary"><Search /></Button>
             </Form>
         </Container>
     )
