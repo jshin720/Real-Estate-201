@@ -2,9 +2,9 @@
 import { Schema, model, ObjectId } from "mongoose";
 
 export interface IUser {
-    name: String,
-    password: String,
-    email: String,
+    name: string,
+    password: string,
+    email: string,
     rentals: Array<ObjectId>,
     homes: Array<ObjectId>,
 }
@@ -30,7 +30,7 @@ const userSchema = new Schema<IUser>({
     homes: [{
         type: Schema.Types.ObjectId,
         // ref:
-    }],
+    }]
 });
 
 export default model<IUser>('User', userSchema);

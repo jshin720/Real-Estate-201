@@ -3,10 +3,10 @@ import { Schema, model, ObjectId } from "mongoose";
 export interface IListing {
   category: "rent" | "home" , // for ts this make it so that the use can only choose one of the 2 strings that were written
   price: Number,
-  address: Array<String>,
-  gallery: Array<String>,
-  description: String,
-  features: Array<String>
+  address: Array<string>,
+  gallery: Array<string>,
+  description: string,
+  features: Array<string>
 }
 
 const listingSchema = new Schema<IListing>({
