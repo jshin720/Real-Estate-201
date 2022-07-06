@@ -7,8 +7,9 @@ const express_1 = __importDefault(require("express"));
 const User_1 = __importDefault(require("../../models/User"));
 const bcryptjs_1 = __importDefault(require("bcryptjs"));
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
+// import passport from "passport"
 const router = express_1.default.Router();
-const keys = require('./../config/keys.js');
+const keys = require('./../../../config/keys.js');
 router.post("/register", (req, res) => {
     User_1.default.findOne({
         email: req.body.email,

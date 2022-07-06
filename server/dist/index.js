@@ -11,6 +11,7 @@ const passport_1 = __importDefault(require("passport"));
 const app = (0, express_1.default)();
 const db = require('./../config/keys.js').mongoURI;
 app.use(passport_1.default.initialize());
+require('./../config/passport.js')(passport_1.default);
 app.use(body_parser_1.default.urlencoded({
     extended: false
 }));

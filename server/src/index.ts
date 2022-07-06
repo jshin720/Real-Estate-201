@@ -9,6 +9,7 @@ const db = require('./../config/keys.js').mongoURI;
 
 
 app.use(passport.initialize());
+require('./../config/passport.js')(passport);
 app.use(bodyParser.urlencoded({
   extended: false
 }));
