@@ -24,7 +24,7 @@ router.post("/register", (req: any, res: any) => {
         password: req.body.password,
         email: req.body.email
       })
-      bcrypt.genSalt(20, (err, salt: string) => {
+      bcrypt.genSalt(20, (err: any, salt: string) => {
         bcrypt.hash(newUser.password, salt, (err, hash) => {
           if (err) throw err;
           newUser.password = hash;
@@ -42,7 +42,7 @@ router.post("/register", (req: any, res: any) => {
                 (err, token) => {
                   res.json({
                     success: true,
-                    token: "Bearer " + token
+                    token: "Bearer" + token
                   });
                 }
               );
